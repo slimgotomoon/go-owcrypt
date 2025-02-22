@@ -380,7 +380,7 @@ func Add(point1, point2 []byte, name string) (point []byte, isinfinity bool) {
 		return nil, false
 	}
 
-	if x_big.Cmp(big.NewInt(0)) == 0 && x_big.Cmp(big.NewInt(0)) == 0 {
+	if x_big.Cmp(big.NewInt(0)) == 0 && y_big.Cmp(big.NewInt(0)) == 0 {
 		return nil, true
 	}
 
